@@ -1,14 +1,4 @@
-import {
-  Facebook,
-  Graphics,
-  Help,
-  Instagram,
-  Linkedien,
-  Logout,
-  Portfolio,
-  Timeline,
-  Twitter,
-} from "./icon";
+import {Facebook,Graphics,Help,Instagram,Linkedien,Logout,Portfolio,Timeline,Twitter,} from "./icon";
 
 export const Social_Links = [
   {
@@ -49,11 +39,11 @@ export const SideBar_Data = [
 
 export const Sidebar_DownData = [
   {
-    icon:Help,
+    icon: Help,
     name: "Help",
   },
-    {
-    icon:Logout,
+  {
+    icon: Logout,
     name: "Logout",
   },
 ];
@@ -61,14 +51,14 @@ export const Sidebar_DownData = [
 export const Hero_Card = [
   {
     title: 'Working Capital Loan',
-    info:'Type of instrument',
+    info: 'Type of instrument',
   },
   {
-     title: '16.00%',
-    info:'Interest rate',
+    title: '16.00%',
+    info: 'Interest rate',
   },
   {
-     title: '$ 5,565,099.00',
-    info:'Total amount',
+    title: '$ 5,565,099.00',
+    info: 'Total amount',
   },
 ]

@@ -16,13 +16,13 @@ const SideNavBar = () => {
       </div>
 
       <div>
-        {Sidebar_DownData.map((item,index)=>(
+        {Sidebar_DownData.map((item, index) => (
           <div key={index} className='flex items-center gap-3 mb-2 py-[10px] group px-4 hover:bg-[#62C9CC] hover:rounded-[4px]'>
             <div className=''>
               <item.icon className="text-[#B8B9C5] group-hover:text-white transition-colors duration-200" />
-            </div> 
+            </div>
             <Description className='text-[#B8B9C5] group-hover:text-white transition-colors duration-200 '>{item.name} </Description>
-        </div>
+          </div>
         ))}
       </div>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+        import React from 'react'
 import Heading from './common/Heading'
 import Description from './common/Description'
 import Detail from './common/Detail'

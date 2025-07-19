@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Heading = ({children,className}) => {
+const Heading = ({ children, className }) => {
   return (
     <div className={`${className} font-medium `}>
       {children}
