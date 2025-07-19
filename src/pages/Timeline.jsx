@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutCompany from '../components/AboutCompany'
 
 const Timeline = () => {
   return (
-    <div>Timeline</div>
+    <>
+      <AboutCompany />
+    </>
   )
 }
 

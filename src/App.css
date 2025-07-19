@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
-body {
-    background-color: #12123A;
+
+@theme{
+    --font-ldfja:l
 }

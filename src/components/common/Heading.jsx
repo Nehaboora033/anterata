@@ -1,8 +1,10 @@
-import React, { Children } from 'react'
+import React from 'react'
 
-const Heading = ({Children}) => {
+const Heading = ({children,className}) => {
   return (
-    <div className={`font-medium`}>{Children} </div>
+    <div className={`${className} font-normal`}>
+      {children}
+    </div>
   )
 }
 
