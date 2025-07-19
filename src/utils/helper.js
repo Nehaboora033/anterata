@@ -57,3 +57,18 @@ export const Sidebar_DownData = [
     name: "Logout",
   },
 ];
+
+export const Hero_Card = [
+  {
+    title: 'Working Capital Loan',
+    info:'Type of instrument',
+  },
+  {
+     title: '16.00%',
+    info:'Interest rate',
+  },
+  {
+     title: '$ 5,565,099.00',
+    info:'Total amount',
+  },
+]
