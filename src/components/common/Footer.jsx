@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='bg-[#111131] py-[14px]'>
             <div className='max-w-[1148px] ml-[292px] mr-[92px] px-3'>
                 <div className='flex justify-between items-center'>
-                    <Description className={'text-[#B8B8C1]'}>© Copyright ${Year.getFullYear()}  Pantera | All rights reserved.  </Description>
+                    <Description className={'text-[#B8B8C1]'}>© Copyright {Year.getFullYear()}  Pantera | All rights reserved.  </Description>
                     <div className='flex gap-4 '>
                         {Social_Links.map((item, index) => (
                             <div key={index} className='w-[44px] h-[44px] border border-[#62C9CC] group transition-all duration-200 hover:bg-[#62C9CC]   rounded-[50%] flex items-center justify-center cursor-pointer'>

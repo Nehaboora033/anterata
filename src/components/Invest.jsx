@@ -10,7 +10,7 @@ import { Invest_Data } from '../utils/helper'
 const Invest = () => {
   return (
     <>
-      <div className='flex justify-end '><Button className={'text-[#62C9CC] hover:text-white hover:bg-[#62C9CC] transition-colors duration-200 ease-in-out cursor-pointer px-[26.5px] py-4 bg-[#1A2449] mb-[12px]'}>Back</Button></div>
+      {/* <div className='flex justify-end '><Button className={'text-[#62C9CC] hover:text-white hover:bg-[#62C9CC] transition-colors duration-200 ease-in-out cursor-pointer px-[26.5px] py-4 bg-[#1A2449] mb-[12px]'}>Back</Button></div> */}
       <div className='max-w-[360px] relative text-white border border-[#243E61]  rounded-[10px] py-[18px] px-[16px] bg-custom-gradient' >
         <Details svg={Question} titleText={"Enter Amount to Invest"} infoText={"Invest"} className={'mb-[18px]'} />
         <Input svg={Dollar} className='' placeholderText={'USD'} inputclass={'bg-[#233E64] py-3 pl-4 pr-[10px] w-full rounded-[8px]'} />
