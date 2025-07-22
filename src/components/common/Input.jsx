@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Input = ({ placeholderText, inputclass, svg: IconSearch }) => {
+const Input = ({ placeholderText, inputclass, svg: Icon }) => {
   return (
     <div className="relative">
       <input
@@ -11,7 +11,7 @@ const Input = ({ placeholderText, inputclass, svg: IconSearch }) => {
 
       <span className="absolute  top-1/2 -translate-y-1/2 right-3 ">
         {/* {children} */}
-        <IconSearch className='cursor-pointer hover:scale-105' />
+        <Icon className='cursor-pointer hover:scale-110' />
       </span>
     </div>
   )

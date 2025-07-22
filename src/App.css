@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+
+.bg-custom-gradient {
+    background: linear-gradient(117.22deg, rgba(18, 18, 58, 0.16) -52.48%, rgba(52, 159, 255, 0.16) 113.7%);
+}
+
+@theme{
+    --blur-4xl:100px;
+}
+
+
+
+
+
+
+
+/* Timeline range code  */
 .range-custom {
     -webkit-appearance: none;
     width: 100%;
@@ -45,4 +61,20 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+/* swiper css */
+
+.custom-swiper-pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 6px;
+    background-color: #ECECEC;
+    border-radius:36px;
+    opacity: 1;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.custom-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #62C9CC;
 }

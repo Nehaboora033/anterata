@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Heading from './common/Heading'
 import Description from './common/Description'
-import Detail from './common/Detail'
 import { Bank, Exchange, Loan, Money, Months } from '../utils/icon'
+import Details from './common/Details'
 
 const HowIts = () => {
     const [value, setValue] = useState(40);
@@ -44,11 +44,11 @@ const HowIts = () => {
                 </div>
             </div>
             <div className='flex flex-wrap gap-[12px]'>
-                <Detail titleText={'Working Capital Loan'} infoText={'Type of instrument'} svg={Loan} />
-                <Detail titleText={'Pantera Exchange'} infoText={'Transmitter'} svg={Exchange} />
-                <Detail titleText={'Compass Bank'} infoText={'Settlor entity'} svg={Bank} />
-                <Detail titleText={'$ 5565099.00'} infoText={'Total amount'} svg={Money} />
-                <Detail titleText={'2 months'} infoText={'Estimated repayment date'} svg={Months} />
+                <Details titleText={'Working Capital Loan'} infoText={'Type of instrument'} svg={Loan} />
+                <Details titleText={'Pantera Exchange'} infoText={'Transmitter'} svg={Exchange} />
+                <Details titleText={'Compass Bank'} infoText={'Settlor entity'} svg={Bank} />
+                <Details titleText={'$ 5565099.00'} infoText={'Total amount'} svg={Money} />
+                <Details titleText={'2 months'} infoText={'Estimated repayment date'} svg={Months} />
             </div>
         </div>
     )
