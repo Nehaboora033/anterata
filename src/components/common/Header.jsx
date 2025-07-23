@@ -52,14 +52,14 @@ const Header = () => {
 
 
       {/* hamburger */}
-      <div className="sm:hidden">
+      <div className="md:hidden">
         <Hamburger toggled={isOpen} toggle={setisOpen} />
       </div>
 
       {/* Mobile Sidebar — place this after header layout (NOT inside the flex row) */}
       <div
         className={`
-    fixed top-0 right-0 h-full w-full bg-[#1A2449] z-50 p-4 md:hidden
+    fixed top-0 right-0 h-full w-[80%] sm:w-[60%] bg-[#1A2449] z-50 p-4 md:hidden
     transform transition-transform duration-700 ease-in-out
     ${isOpen ? 'translate-x-0' : 'translate-x-full'}
   `}
