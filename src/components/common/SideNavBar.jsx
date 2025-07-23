@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
 import { SideBar_Data, Sidebar_DownData } from '../../utils/helper'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Description from './../common/Description'
 
 const SideNavBar = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const location = useLocation();
 
   return (
-    <div className='w-[272px] py-[14px] pl-[28px] pr-[18px] h-[650px] bg-[#14163D] border-[#1D2B4E] border-r flex flex-col justify-between '>
+    <div className='hidden min-[1070px]:w-[270px] w-[240px]  py-[14px] pl-[28px] pr-[18px] h-full bg-[#14163D] border-[#1D2B4E] border-r md:flex flex-col justify-between '>
       <div>
         {SideBar_Data.map((item, index) => (
-          <NavLink to={item.link} onClick={() => setActiveIndex(index)} key={index} className={`flex items-center gap-3 mb-2 group py-[10px] px-4  hover:bg-[#222448] hover:rounded-[4px] ${activeIndex === index ?'bg-[#62C9CC] rounded-[4px]':''} `}>
-            <item.icon className={`text-[#B8B9C5] group-hover:text-white transition-colors duration-200 ${activeIndex == index ?'text-white':''}`} />
-            <Description className={`text-[#B8B9C5] group-hover:text-white ${activeIndex === index ?'text-white ':''}`}>{item.name}</Description>
+          <NavLink to={item.link} onClick={() => setActiveIndex(index)} key={index} className={`flex items-center gap-3 mb-2 group py-[10px] px-4  hover:bg-[#222448] hover:rounded-[4px] ${activeIndex === index ? 'bg-[#62C9CC] rounded-[4px]' : ''} `}>
+            <item.icon className={`text-[#B8B9C5] group-hover:text-white transition-colors duration-200 ${activeIndex === index ? 'text-white' : ''}`} />
+            <Description className={`text-[#B8B9C5] group-hover:text-white ${activeIndex === index ? 'text-white ' : ''}`}>{item.name}</Description>
           </NavLink>
         ))}
       </div>
@@ -28,7 +29,7 @@ const SideNavBar = () => {
         ))}
       </div>
 
-     
+
     </div>
   )
 }

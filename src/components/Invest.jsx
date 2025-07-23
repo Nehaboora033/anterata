@@ -11,18 +11,18 @@ const Invest = () => {
   return (
     <>
       {/* <div className='flex justify-end '><Button className={'text-[#62C9CC] hover:text-white hover:bg-[#62C9CC] transition-colors duration-200 ease-in-out cursor-pointer px-[26.5px] py-4 bg-[#1A2449] mb-[12px]'}>Back</Button></div> */}
-      <div className='max-w-[360px] relative text-white border border-[#243E61]  rounded-[10px] py-[18px] px-[16px] bg-custom-gradient' >
+      <div className='min-[1340px]:max-w-[360px] w-full relative text-white border border-[#243E61]  rounded-[10px] py-[18px] px-[16px] bg-custom-gradient' >
         <Details svg={Question} titleText={"Enter Amount to Invest"} infoText={"Invest"} className={'mb-[18px]'} />
         <Input svg={Dollar} className='' placeholderText={'USD'} inputclass={'bg-[#233E64] py-3 pl-4 pr-[10px] w-full rounded-[8px]'} />
 
         <div className='my-5'>
           {Invest_Data.map((item, index) => (
             <div key={index} className=''>
-              <div className='flex justify-between mb-[10px] mt-[10px] '>
+              <div className='flex justify-between mb-[10px] mt-[10px]'>
                 <p className='font-normal text-[14px]'>{item.title}</p>
                 <p className='font-normal text-[14px]'>{item.value} </p>
               </div>
-              <div className='bg-[#607A96] w-[328px] h-[1.4px]'></div>
+              <div className='bg-[#607A96] w-full h-[1.4px]'></div>
             </div>
           ))}
         </div>

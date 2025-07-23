@@ -14,30 +14,30 @@ function App() {
     <div className="h-screen bg-[#12123A] text-white flex flex-col">
       {/* Fixed Header */}
       <div className="z-10">
-        <Header />
+        {/* <Header /> */}
       </div>
 
       {/* Main Content Layout */}
-      <div className="flex-1 flex overflow-hidden gap-6 ">
+      <div className="flex-1 flex overflow-hidden md:gap-6 pl-3 ">
         {/* Sidebar */}
         <aside className="">
           <SideNavBar />
         </aside>
 
         {/* Scrollable Center and Right Section */}
-        <div className="my-[10px] gap-3 flex  flex-1 w-full pr-4">
+        <div className="my-[10px] gap-3 flex  flex-1 w-full pr-3 ">
           {/* Scrollable Center Content Area */}
           <main className="flex-1 overflow-y-auto ">
             <Outlet />
           </main>
 
           {/* Scrollable Right Sidebar */}
-          <div className='flex flex-col'>
-            <div className='flex justify-end '><Button className={'text-[#62C9CC] hover:text-white hover:bg-[#62C9CC] transition-colors duration-200 ease-in-out cursor-pointer px-[26.5px] py-4 bg-[#1A2449] mb-[12px]'}>Back</Button></div>
-            <aside className="overflow-y-auto">
+          {/* <div className='flex flex-col'> */}
+            {/* <div className='flex justify-end '><Button className={'text-[#62C9CC] hover:text-white hover:bg-[#62C9CC] transition-colors duration-200 ease-in-out cursor-pointer px-[26.5px] py-4 bg-[#1A2449] mb-[12px]'}>Back</Button></div> */}
+            {/* <aside className="overflow-y-auto">
               <RightSideBar />
-            </aside>
-          </div>
+            </aside> */}
+          {/* </div> */}
         </div>
       </div>
 
@@ -50,16 +50,3 @@ function App() {
 }
 
 export default App
-
-
-// < div className = "flex min-h-screen flex-col bg-[#12123A] text-white" >
-//     <Header />
-//     <div className="flex flex-1 ">
-//       <SideNavBar />
-//       <main className="flex-1 p-4 overflow-y-auto ">
-//         <Outlet />
-//       </main>
-//       <RightSideBar/>
-//     </div>
-//     <Footer />
-//   </div >

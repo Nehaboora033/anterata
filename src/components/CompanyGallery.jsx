@@ -11,7 +11,7 @@ const CompanyGallery = () => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-    <div className='max-w-[360px] w-full bg-[#192145] rounded-[10px] mt-[21px] py-4 px-5'>
+    <div className='max-w-[360px] w-full bg-[#192145] rounded-[10px]  py-4 px-5'>
       <Heading className={'text-xl mb-[15px] '}>Company Gallery</Heading>
 
       {/* Main Swiper */}
@@ -41,7 +41,7 @@ const CompanyGallery = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-     
+
 
       {/* Thumbnail Navigation (manual) */}
       <div className='flex gap-2 mt-4 justify-center flex-wrap'>
@@ -51,7 +51,7 @@ const CompanyGallery = () => {
             src={img.image}
             alt={`thumb-${i}`}
             onClick={() => swiperRef.current.slideToLoop(i)}
-            className={`h-[51px] w-[74px] object-cover rounded-lg border-2 cursor-pointer transition-all duration-300 ${i === activeIndex ? 'border-[#62C9CC]' : 'border-transparent'
+            className={`:h-[51px] min-[390px]:w-[74px] w-[58px] object-cover rounded-lg border-2 cursor-pointer transition-all duration-300 ${i === activeIndex ? 'border-[#62C9CC]' : 'border-transparent'
               }`}
           />
         ))}
