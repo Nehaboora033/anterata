@@ -14,7 +14,7 @@ function App() {
     <div className="h-screen bg-[#12123A] text-white flex flex-col">
       {/* Fixed Header */}
       <div className="z-10">
-        {/* <Header /> */}
+        <Header />
       </div>
 
       {/* Main Content Layout */}

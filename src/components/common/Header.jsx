@@ -19,14 +19,14 @@ const Header = () => {
       <img src={logo} alt="logo" className='w-[94px] h-[16px] cursor-pointer hover:scale-105' />
       <div className='max-w-[401px] w-full'>
         <Input placeholderText={'Search for Assets'} svg={SearchIcon} inputclass={'py-[9px] max-w-[401px] relative max-w-[401px] w-full pl-[23px] pr-[10px] bg-[#222448] rounded-[44px]'} />
-        {/* <SearchIcon className={'cursor-pointer hover:scale-105'} /> */}
+        {/* <SearchIcon className={'cursor-pointer hover:scale-105'} /> */ }
         {/* </Input> */}
       </div>
       <div className='flex gap-4 items-center'>
           <Notification className={'cursor-pointer'} />
-        <div className=' relative text-left rounded-[33px] bg-[#222448] flex gap-[9px] items-center p-2 pr-[12px] '>
+        <div className=' relative text-left rounded-[33px] bg-[#222448] cursor-pointer flex gap-[9px] items-center p-2 pr-[12px]' onClick={toggleDropdown}>
           <img src={profileimg} alt="image" />
-          <button className='flex gap-[15px] cursor-pointer items-center' onClick={toggleDropdown}  >
+          <button className='md:flex gap-[15px]  items-center hidden'   >
             <span className='font-normal text-base text-white'>Jhon Doe</span>
             <Arrow className={`transition-all duration-500 ${rotated?'rotate-180':'rotate-0'}`}/>
           </button>
