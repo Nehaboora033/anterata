@@ -9,8 +9,6 @@ import { SideBar_Data, Sidebar_DownData } from './../../utils/helper'
 import { NavLink } from 'react-router-dom'
 import Description from './Description'
 
-
-
 const Header = () => {
   const [rotated, setRotated] = useState(false);
   const [isOpen, setisOpen] = useState(false);
@@ -24,9 +22,7 @@ const Header = () => {
     <div className='max-w-[1440px] mx-auto p-3 w-full bg-[#14163D] border-[#1D2B4E] border-b flex items-center justify-between '>
       <img src={logo} alt="logo" className='w-[94px] h-[16px] cursor-pointer hover:scale-105' />
       <div className='max-w-[401px] w-full'>
-        <Input placeholderText={'Search for Assets'} svg={SearchIcon} inputclass={'py-[9px]  sm:flex hidden max-w-[401px] relative max-w-[401px] w-full pl-[23px] pr-[10px] bg-[#222448] rounded-[44px]'} />
-        {/* <SearchIcon className={'cursor-pointer hover:scale-105'} /> */}
-        {/* </Input> */}
+        <Input placeholderText={'Search for Assets'} svg={SearchIcon} inputclass={'py-[9px]  min-[670px]:flex hidden max-w-[401px] relative max-w-[401px] w-full pl-[23px] pr-[10px] bg-[#222448] rounded-[44px]'} />
       </div>
       <div className='flex sm:gap-4 gap-2 items-center'>
         <Notification className={'cursor-pointer w-[24px] h-[24px]'} />
@@ -48,8 +44,6 @@ const Header = () => {
           </div>
         )}
       </div>
-
-
 
       {/* hamburger */}
       <div className="md:hidden">
@@ -104,8 +98,6 @@ const Header = () => {
           </div>
         ))}
       </div>
-
-
     </div>
   )
 }

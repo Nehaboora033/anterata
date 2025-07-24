@@ -7,10 +7,6 @@ import { Hero_Card } from '../utils/helper'
 const Hero = () => {
   return (
     <div className='min-[1340px]:max-w-[740px] w-full'>
-      {/* <div className='flex gap-[11px] '>
-        <Heading className='text-[24px] '>Ferrominera Orinoco </Heading>
-        <Button className={'text-[#62C9CC] bg-[#1D2A4D] hover:text-white hover:bg-[#62C9CC] transition-colors duration-200 ease-in-out  cursor-pointer rounded-[100px] py-2 px-4 '}>Iron producer</Button>
-      </div> */}
       <div className='flex gap-4 mb-5 mx-2 min-[540px]:flex-row flex-col  '>
         {Hero_Card.map((item, index) => (
           <div className='min-[1340px]:max-w-[236px] w-full py-[21px] px-[14px] hover:outline outline-[#62C9CC] cursor-pointer rounded-[10px] flex flex-col justify-center  bg-[#151940]' key={index}>
@@ -19,7 +15,6 @@ const Hero = () => {
           </div>
         ))}
       </div>
-
     </div>
   )
 }

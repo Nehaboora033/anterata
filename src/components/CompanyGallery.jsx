@@ -42,7 +42,6 @@ const CompanyGallery = () => {
         ))}
       </Swiper>
 
-
       {/* Thumbnail Navigation (manual) */}
       <div className='flex gap-2 mt-4 justify-center flex-wrap'>
         {Gallery.map((img, i) => (
@@ -56,6 +55,7 @@ const CompanyGallery = () => {
           />
         ))}
       </div>
+
       {/* Pagination BELOW thumbnails */}
       <div className='custom-swiper-pagination mt-4 flex justify-center' />
     </div>

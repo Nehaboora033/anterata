@@ -5,8 +5,6 @@ import Description from './../common/Description'
 
 const SideNavBar = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-  
-
   return (
     <div className='hidden min-[1070px]:w-[270px] w-[240px]  py-[14px] pl-[28px] pr-[18px] h-full bg-[#14163D] border-[#1D2B4E] border-r md:flex flex-col justify-between '>
       <div>
@@ -17,8 +15,9 @@ const SideNavBar = () => {
           </NavLink>
         ))}
       </div>
-
       <div>
+
+        {/* hepl or logout data */}
         {Sidebar_DownData.map((item, index) => (
           <div key={index} className='flex items-center cursor-pointer gap-3 mb-2 py-[10px] group px-4 hover:bg-[#222448] hover:rounded-[4px]'>
             <div>
@@ -28,8 +27,6 @@ const SideNavBar = () => {
           </div>
         ))}
       </div>
-
-
     </div>
   )
 }
